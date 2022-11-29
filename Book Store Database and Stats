@@ -27,7 +27,7 @@ SELECT SUM(Quantity) "Book Inventory"
 FROM Store;
 
 --What is the average price for a paperback book?--
-SELECT AVG(Price) "Avg Book Price" 
+SELECT AVG(ROUND(Price)) "Avg Book Price" 
 From Store
 WHERE Format="Paperback";
 
